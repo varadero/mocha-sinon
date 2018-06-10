@@ -28,8 +28,4 @@ describe('Hello World test suite', () => {
         expect(notCoveredStub.callCount).eq(1, 'should call notConverted once');
         expect(notCoveredStub.calledWithExactly('test2')).eq(true, 'should call notCoverted with value test2');
     });
-
-    it('simulate test failure', () => {
-        expect(1).eq(2, 'intentional failure');
-    });
 });
