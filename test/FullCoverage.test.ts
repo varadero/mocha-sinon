@@ -28,5 +28,5 @@ describe('FullCoverage tests', () => {
             const result = fcInstance.multiply(4, 5);
             expect(result).eq(20, 'should return 20 for 4 and 5');
         })
-    })
+    });
 });
