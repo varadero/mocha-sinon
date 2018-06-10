@@ -1,0 +1,6 @@
+node_modules
+/.vscode
+/.nyc_output
+/tsc-out
+/target
+/test-results
