@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "tsc",
     "test": "tsc && mocha dist/tsc-out/test/**/*.test.js",
-    "test:report": "tsc && mocha dist/tsc-out/test/**/*.test.js --reporter mochawesome --reporter-options reportDir=dist/test-results",
-    "test:coverage": "tsc && nyc --extension .ts --reporter=lcov --reporter=text --exclude-after-remap=false --include=dist/tsc-out/src/**/*.js --all=true --cache=true --report-dir=dist/coverage mocha dist/tsc-out/test/**/*.test.js"
+    "test:report": "mocha dist/tsc-out/test/**/*.test.js --reporter mochawesome --reporter-options reportDir=dist/test-results",
+    "test:coverage": "nyc --extension .ts --reporter=lcov --reporter=text --exclude-after-remap=false --include=dist/tsc-out/src/**/*.js --all=true --cache=true --report-dir=dist/coverage mocha dist/tsc-out/test/**/*.test.js"
   },
   "author": "",
   "license": "ISC",
